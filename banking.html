@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- balance and tranxaction -->
+  <body class="w-3/4 mx-auto">
+    <h1 class="text-4xl text-center mt-8 mb-8">
+      LET'S GET SOME <span class="text-blue-500 font-bold">MOOOONEYY!! </span>
+    </h1>
+
+    <main>
+      <section>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-blue-400 p-8">
+            <h3 class="text-2xl">DEPOSIT</h3>
+            <h2 class="text-4xl">$ <span id="depo-money">00</span></h2>
+          </div>
+          <div class="bg-yellow-400 p-8">
+            <h3 class="text-2xl">WITHDRAW</h3>
+            <h2 class="text-4xl">$ <span id="utao-money">00</span></h2>
+          </div>
+          <div class="bg-green-400 p-8">
+            <h3 class="text-2xl">BALANCE</h3>
+            <h2 class="text-4xl">$ <span id="total-money">1240</span></h2>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- deposit and withdraw -->
+    <section>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-red-300 p-4 mt-8">
+          <h3 class="text-2xl">Please Deposit</h3>
+          <div> 
+            <input
+              id="deposit-input"
+              class="border-2 border-slate-700 mt-4 p-1 pl-1 w-full mb-4 rounded"
+              type="text"
+              placeholder="$ amount you want to deposit"
+            /> <br> 
+            <button id="deposit-button" class="bg-yellow-600 font-semibold px-4 py-2 rounded">DEPOSIT</button>
+          </div>
+        </div>
+        <div class="bg-purple-300 p-4 mt-8">
+          <h3 class="text-2xl">Please withdraw</h3>
+          <div>
+            <input
+              id="withdraw-input"
+              class="border-2 border-slate-700 mt-4 p-1 pl-1 w-full mb-4 rounded"
+              type="text"
+              placeholder="$ amount you want to withdraw"
+            /> <br>
+            <button id="withdraw-button" class="bg-yellow-600 font-semibold px-4 py-2 rounded">WITHDRAW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/hishab.js"></script>
+  </body>
+</html>
